@@ -21,20 +21,33 @@
 <body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen">
 
   <div class="max-w-4xl mx-auto px-6 py-16">
-    <!-- Header / Presentación -->
+    <!-- Header / Presentación con Foto -->
     <header class="mb-16">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-        <div>
-          <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Tu Nombre</h1>
-          <p class="text-lg text-slate-400 mt-1">Desarrollador de Software</p>
-          <p class="text-sm text-slate-500 mt-1">Ubicación, País • Disponible para nuevos proyectos</p>
+        
+        <!-- Foto + Información Principal -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+          <img 
+            src="perfil.jpeg" 
+            alt="Foto de perfil" 
+            class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-2 border-blue-500/30 shadow-lg shadow-blue-500/10 shrink-0"
+          />
+          <div>
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Tu Nombre</h1>
+            <p class="text-lg text-slate-400 mt-1">Desarrollador de Software</p>
+            <p class="text-sm text-slate-500 mt-0.5">Disponible para nuevos proyectos</p>
+          </div>
         </div>
-        <div class="flex gap-3">
+
+        <!-- Botones de Contacto -->
+        <div class="flex flex-wrap gap-3">
           <a href="https://github.com/tu-usuario" target="_blank" class="px-4 py-2 text-sm font-medium bg-slate-900 border border-slate-800 rounded-lg hover:border-slate-600 transition">GitHub</a>
           <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="px-4 py-2 text-sm font-medium bg-slate-900 border border-slate-800 rounded-lg hover:border-slate-600 transition">LinkedIn</a>
           <a href="mailto:tu-email@correo.com" class="px-4 py-2 text-sm font-medium bg-blue-600 rounded-lg hover:bg-blue-500 transition text-white">Contacto</a>
         </div>
       </div>
+
+      <!-- Resumen profesional -->
       <p class="text-slate-300 mt-6 max-w-2xl leading-relaxed">
         Desarrollador enfocado en construir software robusto, arquitecturas limpias y soluciones de gestión eficientes. Apasionado por resolver problemas técnicos complejos y diseñar herramientas que optimicen procesos de trabajo.
       </p>
@@ -112,7 +125,7 @@
 
     <!-- Footer -->
     <footer class="pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
-      © 2026 • Diseñado y publicado en GitHub Pages
+      © 2026 • Portafolio de Desarrollo
     </footer>
   </div>
 
